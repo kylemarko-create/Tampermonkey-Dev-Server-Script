@@ -1,6 +1,6 @@
 # Tampermonkey Dev Server
 
-A lightweight local development server for Tampermonkey userscripts. Edit your script in any IDE, save, and see changes instantly on page reload. no repeated copy pasting into the Tampermonkey editor required.
+A lightweight local development server for Tampermonkey userscripts. Edit your script in any IDE, save, and see changes instantly on page reload. No repeated copy pasting into the Tampermonkey editor required.
 
 ## How It Works
 
@@ -8,15 +8,15 @@ Instead of editing scripts directly inside Tampermonkey, this setup serves your 
 
 ```
 ┌─────────────┐       @require        ┌────────────────────┐
-│  Tampermonkey│  ◄──────────────────  │  localhost:8765     │
-│  (Loader)   │                        │  (DevServer.bat)    │
-└─────────────┘                        └────────────────────┘
+│ Tampermonkey│  ◄──────────────────  │  localhost:8765    │
+│  (Loader)   │                       │  (DevServer.bat)   │
+└─────────────┘                       └────────────────────┘
                                               ▲
                                               │ serves
                                               │
                                        ┌──────┴──────┐
                                        │  Beta.js    │
-                                       │  (your code)│
+                                       │ (your code) │
                                        └─────────────┘
 ```
 
@@ -25,7 +25,7 @@ Instead of editing scripts directly inside Tampermonkey, this setup serves your 
 | File | Purpose |
 |------|---------|
 | `DevServer.bat` | Starts a Python HTTP server on port 8765, serving your plugin folder |
-| `DevLoader Tampermonkey Script.js` | A Tampermonkey userscript template that loads `Beta.js` from localhost |
+| `DevLoader Tampermonkey Script.js` | A Tampermonkey userscript template that loads `Beta.js` from localhost. Input this in your tampermonkey plugin. |
 
 ## Setup
 
